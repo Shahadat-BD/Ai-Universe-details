@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <div class="text-center">
+        <h1 class="text-3xl font-bold my-3">AI Universe Hub </h1>
+        <button class="text-white bg-[#EB5757] px-4 py-3 font-semibold text-md rounded-lg ">Short by date</button>
+     </div>
+
+     <section class="w-[90%] m-auto mt-5">
+        <div id="ai-container" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+             
+        </div> 
+         <div class="my-10 text-center">
+            <button onclick="seeMoreHandler()" class="bg-[#EB5757] text-white px-8 py-4 rounded-xl" id="seeMore_btn">See More</button>
+         </div>
+
+<!-- modal added  -->
+<!-- You can open the modal using ID.showModal() method -->
+
+<dialog id="show_modal_details" class="modal">
+  <form method="dialog" class="modal-box w-3/4 max-w-5xl h-[84%] flex items-center">
+   <div class="px-16">
+      <button class="btn btn-md btn-circle btn-ghost absolute bg-red-500 text-white border-none right-2 top-2">✕</button>
+      <div id="modal-container" class="flex lg:flex-row flex-col gap-4">
+     
+ 
+    </div> 
+   </div>
+
+  </form>
+</dialog>
+
+
+     </section>
+    <script src="./javascript/universe.js"></script>
+</body>
+</html>
+
+
+
